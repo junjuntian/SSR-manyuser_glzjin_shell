@@ -29,14 +29,7 @@ chmod +x /root/shadowsocks/*.sh
 
 supervisor 默认配置目录 ：`/etc/supervisor/conf.d/shadowsocks.conf （Centos:/etc/supervisord.conf）`
 
-# 启动方式（）
 
-### 旧版本：
-
-* 启动：`/root/shadowsocks/log.sh`
-* 启动（日志模式）：`/root/shadowsocks/logrun.sh`
-* 停止：`/root/shadowsocks/stop.sh`
-* 日志：`/root/shadowsocks/tail.sh`
 
 ### 新版本：
 
@@ -79,32 +72,4 @@ V3.0
 * 2.添加 选择列表，可以手动选择安装 SSR 或 supervisor 
 * 3.修复 webapi模式下运行出现 no module named requests 的情况 （由于缺少 requests 模块）
 * 4.改善 部分交互内容
-
-## 2017-08-09
-V2.1.2
-
-* 1.调整顺序。优先进行信息输入，然后进入安装流程
-
-## 2017-07-29
-V2.1.1
-
-* 1.libsodium 版本由早期 1.0.10 调整至 1.0.13
-
-
-## 2017-05-07
-V2.1
-
-* 1.修复因逻辑问题导致配置文件内容异常从而导致的运行报错
-* 2.修复由于 debian 源中有 deb cdrom 而导致的安装中断
-* 3.添加了禁用防火墙的相关内容
-
-V2.0
-
-* 1.实现输入配置信息、以及全自动安装，支持 modwebapi 及 glzjinmod（mysql connect）
-* 2.修复bug
-
-## 2017-05-06
-V1.1
-
-* 1、自动进行相关依赖的安装，支持 ubuntu14.04+ / centos6+ /debian7+ 
 
